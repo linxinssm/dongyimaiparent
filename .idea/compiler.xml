@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="dongyimai_sms_service" />
+        <module name="dongyimai_solr_util" />
+        <module name="dongyimaicartinterface" />
+        <module name="dongyimaicartservice" />
+        <module name="dongyimaicartweb" />
+        <module name="dongyimaicommon" />
+        <module name="dongyimaicontentinterface" />
+        <module name="dongyimaicontentservice" />
+        <module name="dongyimaidao" />
+        <module name="dongyimaimanagerweb" />
+        <module name="dongyimaipageinterface" />
+        <module name="dongyimaipageservice" />
+        <module name="dongyimaipageweb" />
+        <module name="dongyimaipojo" />
+        <module name="dongyimaiprotalweb" />
+        <module name="dongyimaisearchinterface" />
+        <module name="dongyimaisearchservice" />
+        <module name="dongyimaisearchweb" />
+        <module name="dongyimaisellergoodsinterface" />
+        <module name="dongyimaisellergoodsservice" />
+        <module name="dongyimaishop" />
+        <module name="dongyimaiuserinterface" />
+        <module name="dongyimaiuserservice" />
+        <module name="dongyimaiuserweb" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="dongyimai_search_interface" target="1.7" />
+      <module name="dongyimai_search_service" target="1.7" />
+      <module name="dongyimaisearch_service" target="1.7" />
+      <module name="dongyimaishopweb" target="1.7" />
+      <module name="dongyimaishopweb01" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
