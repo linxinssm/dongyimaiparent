@@ -42,6 +42,8 @@ public interface UserService {
 	 * @return
 	 */
 	public TbUser findOne(Long id);
+
+	List<TbUser> findByname(String name);
 	
 	
 	/**
@@ -61,5 +63,7 @@ public interface UserService {
 	void createSmsCode(String phone);
 
 	boolean checkCode(String phone, String checkCode);
+
+
 
 }

@@ -21,7 +21,7 @@
     <http pattern="/seller/add.do" security="none"></http>
     <!-- 页面拦截规则 -->
     <http use-expressions="false">
-        <intercept-url pattern="/**" access="ROLE_SELLER" />
+        <intercept-url pattern="/**" access="ROLE_SELLER,ROLE_ADMIN" />
         <form-login login-page="/shoplogin.html"  default-target-url="/admin/index.html" authentication-failure-url="/shoplogin.html" always-use-default-target="true"/>
 
         <csrf disabled="true"/>
@@ -56,12 +56,11 @@
     </authentication-manager>
     <!-- 定义自定义认证类 -->
 
+
     <!--set注入用-->
     <beans:bean id="userDetailService" class="com.dongyimai.shop.service.UserDetailsServiceImpl">
         <beans:property name="sellerService" ref="sellerService"/>
     </beans:bean>
-
-
 
 
 </beans:beans>

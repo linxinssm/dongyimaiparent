@@ -90,6 +90,18 @@ public class UserServiceImpl implements UserService {
 		return userMapper.selectByPrimaryKey(id);
 	}
 
+	@Override
+	public List<TbUser> findByname(String name) {
+
+		TbUserExample tbUserExample = new TbUserExample();
+
+		tbUserExample.createCriteria().andNameEqualTo(name);
+
+		List<TbUser> tbUserList = userMapper.selectByExample(tbUserExample);
+
+		return tbUserList;
+	}
+
 	/**
 	 * 批量删除
 	 */
