@@ -22,7 +22,10 @@
     <!-- 页面拦截规则 -->
     <http use-expressions="false">
         <intercept-url pattern="/**" access="ROLE_SELLER,ROLE_ADMIN" />
-        <form-login login-page="/shoplogin.html"  default-target-url="/admin/index.html" authentication-failure-url="/shoplogin.html" always-use-default-target="true"/>
+        <form-login login-page="/shoplogin.html"
+                    default-target-url="/admin/index.html"
+                    authentication-failure-url="/shoplogin.html"
+                    always-use-default-target="true"/>
 
         <csrf disabled="true"/>
 
@@ -48,6 +51,7 @@
     <!-- 认证管理器 -->
     <authentication-manager>
 
+        <!--认证提供者-->
         <authentication-provider user-service-ref="userDetailService">
             <!--解码-->
             <password-encoder ref="bcryptEncoder"></password-encoder>

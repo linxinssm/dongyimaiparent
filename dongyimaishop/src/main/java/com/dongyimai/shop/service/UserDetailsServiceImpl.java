@@ -3,6 +3,7 @@ package com.dongyimai.shop.service;
 import com.dongyimai.pojo.TbSeller;
 import com.dongyimai.sellergoods.service.SellerService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.User;
@@ -10,6 +11,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 
+import javax.activation.DataSource;
 import java.util.ArrayList;
 import java.util.List;
 
